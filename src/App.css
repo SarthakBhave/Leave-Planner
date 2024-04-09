@@ -1,38 +1,73 @@
-.App {
+.container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table-container {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding:6px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#year-header th {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#year-header .arrow {
+  cursor: pointer;
+  font-size: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#month-header .arrow {
+  cursor: pointer;
+  font-size: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.left-arrow {
+  float: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right-arrow {
+  float: right;
+  
+}
+
+.leave-box {
+  padding: 2px 3px;
+  margin: 2px;
+  flex-wrap: wrap;
+  border-radius: 2px;
+}
+.PL {
+  background-color: #a8d0e6; /* Light blue */
+}
+
+.CL {
+  background-color: #c8e6c9; /* Light green */
+}
+
+.OH {
+  background-color: #fff9c4; /* Light yellow */
+}
+
+.SL {
+  background-color: #ffe0b2; /* Light orange */
+}
+
+.WH {
+  background-color: #d1c4e9; /* Light purple */
+}
+
+.FT {
+  background-color: #ffcdd2; /* Light red */
 }
